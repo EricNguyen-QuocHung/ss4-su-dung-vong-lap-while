@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function issue1() {
+            let input = prompt("Nhap 1 so bat ki ");
+            let sum = 0;
+            while (input != -1) {
+                sum += parseInt(input);
+                input = prompt("Nhap tiep 1 so khac");
+            }
+            console.log("Sum is " + sum);
+        }
+
+        function issue2() {
+            let inputHrTag = prompt("Enter a number");
+            console.log(inputHrTag);
+            if (inputHrTag < 0 && inputHrTag > 100) {
+                Console.log("not a valid number, must be from 0 to 100");
+            } else {
+                let hrWidth = 0;
+                while (hrWidth < inputHrTag) {
+                    document.write("<hr width = " + hrWidth + "%>");
+                    hrWidth++;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>ISSUE 1</h1>
+    <button onclick="issue1()">Calculate Sum</button>
+
+    <h1>ISSUE 2</h1>
+    <button onclick="issue2()">Generate custom hr tag</button>
+
+</body>
+</html>
